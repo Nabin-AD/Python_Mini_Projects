@@ -23,7 +23,7 @@ Uses the sample images from [`../Images/Bear/`](../Images/Bear).
 
 ![Bear GIF](Bear.gif)
 
-`Bear.gif` — all four frames combined, each displayed for 500ms, looping forever. This is a fixed example set for this version — the list of images used is hardcoded in the script.
+`Bear.gif` — all four frames combined, each displayed for 350ms, looping forever. This is a fixed example set for this version — the list of images used is hardcoded in the script.
 
 ## Libraries Used
 
