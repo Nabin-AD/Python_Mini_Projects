@@ -1,0 +1,7 @@
+# Used by both StaticImageToGIF and Dynamic versions
+imageio
+Pillow
+numpy
+
+# Note: tkinter (used only by the Dynamic version's file picker) is not listed
+# here — it ships with Python itself and is not installed via pip.
