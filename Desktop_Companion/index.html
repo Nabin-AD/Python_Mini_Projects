@@ -1,0 +1,96 @@
+<!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Style -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app" style="-webkit-app-region: drag;">
+
+    <!-- Title bar -->
+    <div class="title-bar">
+      <!-- Buddy's name -->
+      <h1 id="buddy-name">Buddy's name</h1>
+      <div class="title-bar-btns">
+        <!-- Minimize button -->
+        <button class="title-bar-btn" id="minimize">
+          <img
+            id="minimize-btn"
+            alt="Minimize"
+            src="assets/title-bar-btns/minimize-btn.png"
+          />
+        </button>
+        <!-- Close button -->
+        <button class="title-bar-btn" id="close">
+          <img
+            id="close-btn"
+            alt="Close"
+            src="assets/title-bar-btns/close-btn.png"
+          />
+        </button>
+      </div>
+    </div>
+
+    <!-- Buddy zone -->
+    <div class="buddy-zone">
+      <!-- Buddy illustration -->
+      <img
+        id="buddy"
+        alt="Buddy"
+        src=""
+      />
+      <!-- Mood tag -->
+      <div class="mood-tag">
+        <p id="mood">Normal</p>
+      </div>
+    </div>
+
+    <!-- Care reminder -->
+    <div class="care-reminder">
+      <span id="message">- All good here, just vibing -</span>
+    </div>
+
+    <!-- Food meter -->
+    <div class="food-meter">
+      <!-- Food label -->
+      <div class="food-label">
+        <p id="food">Food</p>
+        <p id="percentage">100%</p>
+      </div>
+      <!-- Food bar -->
+      <div class="food-bar">
+        <div class="percentage-bar" id="bar-1">-</div>
+        <div class="percentage-bar" id="bar-2">-</div>
+        <div class="percentage-bar" id="bar-3">-</div>
+        <div class="percentage-bar" id="bar-4">-</div>
+        <div class="percentage-bar" id="bar-5">-</div>
+        <div class="percentage-bar" id="bar-6">-</div>
+        <div class="percentage-bar" id="bar-7">-</div>
+        <div class="percentage-bar" id="bar-8">-</div>
+        <div class="percentage-bar" id="bar-9">-</div>
+        <div class="percentage-bar" id="bar-10">-</div>
+      </div>
+    </div>
+
+    <!-- Action buttons -->
+    <div class="action-btns">
+      <!-- Feed button -->
+      <button id="feed-btn" class="action-btn">
+        <p class="name">Feed</p>
+        <span class="timer">READY</span>
+      </button>
+      <!-- Restart button -->
+      <button id="restart-btn" class="action-btn" style="display: none">
+        <p class="name">Restart</p>
+        <span class="timer">START OVER</span>
+      </button>
+    </div>
+
+  </div>
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
