@@ -38,7 +38,7 @@ function isTerminal(stage) {
 // -- Configuration --
 const drain_amount = 1; // % to drain per tick
 const drain_interval = 900; // 1% per 0.9s
-const feed_cooldown = 10000; // 10s cooldown after feeding
+const feed_cooldown = 3000; // 3s cooldown after feeding
 const feed_amount = 25; // % gained per feed
 const max_level = 200; // hard cap
 // -- State --
@@ -89,6 +89,7 @@ function updateUI() {
 
 // -- Drain loop --
 setInterval(() => {
+  if (isTerminal(getStage(food_level))) return; // frozen at 200 until restart
   if (food_level > 0) {
     food_level = Math.max(0, food_level - drain_amount);
     updateUI();
